@@ -5,7 +5,8 @@
     },
     "extends": "eslint:recommended",
     "globals": {
-      "console": true
+      "console": true,
+      "jQuery": true
     },
     "parserOptions": {
         "ecmaVersion": 2018
