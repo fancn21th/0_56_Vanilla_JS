@@ -4,9 +4,12 @@ function Car(make) {
   this.wheels = 1
 }
 
+Car.prototype = {}
 Car.prototype.color = 'black'
 Car.prototype.wheels = 4
 
+console.log(typeof Car.prototype)
+console.log(Car.prototype.constructor)
 console.log(Car.prototype)
 
 const myCar = new Car('Ford')
