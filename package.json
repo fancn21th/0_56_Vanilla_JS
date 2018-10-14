@@ -1,0 +1,26 @@
+{
+  "name": "vanilla_js",
+  "version": "1.0.0",
+  "description": "A project with a cool name",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^5.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fancn21th/0_56_Vanilla_JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fancn21th/0_56_Vanilla_JS/issues"
+  },
+  "homepage": "https://github.com/fancn21th/0_56_Vanilla_JS#readme"
+}
