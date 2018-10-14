@@ -1,11 +1,10 @@
 // Check this demo via google devtools
 function Foo() {
-
 }
 
 Foo.prototype = {}
 
-// override the express above
+// override the expression above
 Object.defineProperty(
   Foo.prototype,
   'constructor',

@@ -1,0 +1,35 @@
+'use strict'
+// Check this demo via google devtools
+
+/*
+  property could be changed in prototype chain
+  in only two cases
+*/
+
+const foo = {
+  // name: 'tyler'
+  set name(name) {
+    this.currentName = name
+  }
+}
+
+// Object.defineProperty(
+//   foo,
+//   'name',
+//   {
+//     value: 'tyler',
+//     writable: false
+//   }
+// )
+
+const bar = {
+  lastName: 'clark'
+}
+
+Object.setPrototypeOf(bar, foo)
+
+// not works
+bar.name = 'james'
+
+console.log(bar.name)
+console.log(bar)

@@ -9,6 +9,7 @@ class Vehicle {
 
 class Car extends Vehicle {
   canBeUsed() {
+    // this equal to the object created by new keyword
     return this.isLegal()
   }
 }

@@ -31,6 +31,7 @@ class Boat {
   }
 }
 
+// here both Boath and Car are constructor so we need to use prototype property instead of constructor name
 Object.setPrototypeOf(Boat.prototype, Car.prototype)
 
 const myCar = new Boat('Ford')
