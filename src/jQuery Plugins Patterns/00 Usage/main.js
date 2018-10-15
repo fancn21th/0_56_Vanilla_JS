@@ -1,10 +1,3 @@
-(function($) {
-  $.fn.showLinkLocation = function() {
-    this.filter('a').append(function() {
-      return ' (' + this.href + ')'
-    })
-    return this
-  }
-}( jQuery ))
-
-jQuery('a').showLinkLocation()
+$(document).ready(function () {
+  console.log($.fn)
+})
