@@ -6,13 +6,17 @@
   in only two cases
 */
 
+// const foo = {
+//   name: 'tyler'
+// }
+
 const foo = {
-  // name: 'tyler'
   set name(name) {
     this.currentName = name
   }
 }
 
+// in the case below the property name could not be updated
 // Object.defineProperty(
 //   foo,
 //   'name',
