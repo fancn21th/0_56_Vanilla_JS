@@ -1,18 +1,21 @@
 (function($) {
-  $.fn.hilight = function( options ) {
+  $.fn.highlight = function( options ) {
     var opts = $.extend(
       {},
-      $.fn.hilight.defaults, options
+      $.fn.highlight.defaults, options
     )
     return this.css({
-      color: opts.color
+      color: opts.color,
+      fontSize: opts.fontSize
     })
   }
-  $.fn.hilight.defaults = {
-    color: 'red'
+  $.fn.highlight.defaults = {
+    color: 'red',
+    fontSize: 24
   }
 }( jQuery ))
 
-jQuery('a').hilight({
-  color: 'blue'
+jQuery('ul>li:first-child a').highlight({
+  color: 'blue',
+  fontSize: 28
 })
