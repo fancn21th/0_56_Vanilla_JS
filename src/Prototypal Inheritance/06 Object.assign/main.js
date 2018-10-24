@@ -7,6 +7,7 @@ const parent = {
   }
 }
 
+// create a object that it's prototype linking to parent
 // const child = Object.create(parent)
 // child.height = 6
 
@@ -20,6 +21,9 @@ const child = Object.assign({
 // child will still use the height of itself
 parent.height = 12
 
+console.log(child)
+console.log(parent)
+console.log(parent.height === child.height)
 console.log(child.heightInInches())
 
 
