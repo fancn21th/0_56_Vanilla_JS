@@ -20,7 +20,7 @@
 // console.log(tyler.type)
 
 const createUser = (character, smart = true) => ({
-  smart, // put infront for ovrriden
+  smart, // put in front of other props for overridden
   ...character,
   type: 'human'
 })
