@@ -42,17 +42,21 @@
 var bar = $("<div></div>")
   .appendTo("body")
   .progressbar({
-    value: 20,
     complete: function () {
       console.log('callback is complete!')
     }
-  });
+  })
+  .bind("progressbarcomplete", function (event, data) {
+    alert("Events bubble and support many handlers for extreme flexibility.");
+    alert("The progress bar value is " + data.value);
+  })
+  .progressbar('option', 'value', 20);
 
 // Get the current value.
-console.log(bar.progressbar("value"));
+console.log(bar.progressbar('option', 'value'));
 
 // Update the value.
-bar.progressbar("value", 50);
+bar.progressbar('option', 'value', 100);
 
 // Get the current value again.
-console.log(bar.progressbar("value"));
+console.log(bar.progressbar('option', 'value'));
