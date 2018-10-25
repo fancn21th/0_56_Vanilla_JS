@@ -43,7 +43,7 @@ var bar = $("<div></div>")
   .appendTo("body")
   .progressbar({
     complete: function () {
-      console.log('callback is complete!')
+      alert( "Callbacks are great!" );
     }
   })
   .bind("progressbarcomplete", function (event, data) {
