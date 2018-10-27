@@ -1,11 +1,11 @@
 (function ($) {
-  $.widget("custom.foo", {
+  $.widget('custom.foo', {
 
     // Default options.
     options: {
-      param1: "foo",
-      param2: "bar",
-      param3: "baz"
+      param1: 'foo',
+      param2: 'bar',
+      param3: 'baz'
     },
 
     _create: function () {
@@ -14,7 +14,7 @@
       console.log(this.options)
     }
 
-  });
+  })
 }(jQuery))
 
 jQuery('ul>li:first-child a').foo()
