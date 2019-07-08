@@ -12,3 +12,5 @@ function count() {
 }
 
 count()
+
+console.log('I don not want to be blocked')
